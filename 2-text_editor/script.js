@@ -57,7 +57,7 @@ advancedOptionButton.forEach((button) =>
 );
 
 linkButton.addEventListener("click", () => {
-  const userLink = prompt("Enter a URL");
+  let userLink = prompt("Enter a URL");
   if (/^http/i.test(userLink)) {
     modifyText(linkButton.id, false, userLink);
   } else {
