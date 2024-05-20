@@ -49,7 +49,7 @@ function handleClickSearch() {
           break;
         }
         case "Clouds": {
-          image.src = "./images/clouds.png";
+          image.src = "./images/cloud.png";
           break;
         }
         case "Mist": {
