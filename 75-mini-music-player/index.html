@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="./style.css">
+  <title>#75 - Mini Music Player</title>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <div class="song-info">
+      <div class="artist-name"></div>
+      <div class="song-name"></div>
+      <div class="progress-bar">
+        <div class="fill-bar"></div>
+      </div>
+      <div class="time">0:00 - 0:00</div>
+    </div>
+
+    <div class="disk">
+      <div id="cover" class="cover">
+        <div class="circle"></div>
+      </div>
+    </div>
+
+    <div class="controls">
+      <i id="prev" class="prev-btn fa-solid fa-backward"></i>
+      <i id="play" class="play-btn fa-solid fa-play"></i>
+      <i id="next" class="next-btn fa-solid fa-forward"></i>
+    </div>
+
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

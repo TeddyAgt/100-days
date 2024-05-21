@@ -1,0 +1,142 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  background: #ddd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  position: relative;
+  padding: 10px;
+}
+
+.song-info {
+  background: #000;
+  margin: 0 15px;
+  padding: 15px 15px 5px 150px;
+  border-radius: 15px 15px 0 0;
+}
+
+.song-name {
+  color: #b9b9b9;
+  font-size: 14px;
+  margin: 3px 0 20px;
+}
+
+.artist-name {
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.progress-bar {
+  background: #505050;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.fill-bar {
+  width: 0;
+  height: 6px;
+  border-radius: 20px;
+  background: #1db954;
+}
+
+.time {
+  font-size: 15px;
+  color: #b9b9b9;
+  margin: 10px 0;
+}
+
+.disk {
+  max-width: 120px;
+}
+
+.disk .active {
+  animation: rotate 3s linear 0s infinite forwards;
+}
+
+.cover {
+  width: 145px;
+  height: 145px;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: url(./assets/1.jpg) bottom center / cover;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  transition: 0.2s ease-in-out;
+}
+
+.circle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 1;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #292929;
+  width: 450px;
+  height: 100px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6);
+}
+
+.controls i {
+  cursor: pointer;
+  font-size: 35px;
+  color: #919191;
+  transition: 0.3s ease;
+}
+
+.controls i:hover {
+  color: #fff;
+}
+
+#play {
+  background: #1db954;
+  color: #fff;
+  width: 48px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 28px;
+  display: block;
+  border-radius: 50%;
+  transition: 0.3s ease;
+}
+
+#play:hover {
+  background: #189945;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
